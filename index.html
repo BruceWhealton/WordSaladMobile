@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Word Salad Poetry Magazine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+<!--<link rel="stylesheet" href="_css/wordsalad.min.css" />-->
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+	$('document').bind("mobileinit", function(){
+	//	$.mobile.allowCrossDomainPages = "true";
+	});
+</script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+<script src="_js/myscript.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Donegal+One|Germania+One|Hammersmith+One|Vast+Shadow' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="_css/mystyles.css" />
+
+</head>
+<body>
+<section id="home" data-role="page" data-transition="flip" data-theme="e" data-title="Welcome to Word Salad Mobile">
+  <header data-role="header" data-theme="a">
+    <h1>Welcome to Word Salad</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#intro"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">Intro</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count ui-align-aside">&nbsp;2&nbsp;</span> </a></li>
+      </ul>
+    </nav>
+  </header>
+  <div data-role="content" id="homepage">
+    <h2>Word Salad Poetry Magazine</h2>
+    <h3>In publication since 1995</h3>
+    <p>On the following pages you will find the latest poems published by Word Salad Poetry Magazine.  Depending on interest, we may include in later versions of this app copies of archive/past issues of Word Salad.  You will also find ebook versions of Word Salad available from various online stores, including Amazon.com, Barnes and Noble, and others.</p>
+  </div>
+  <!-- end of content-->
+  <footer data-role="footer"
+			data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+		<li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar --> 
+  </footer>
+</section>
+<section id="intro" data-role="page" data-transition="flip" data-theme="e" data-title="Intro to the Current Edition">
+  <header data-role="header" data-theme="a">
+    <h1>Intro to the Current Edition</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div data-role="content">
+    <div id="theIntro"></div>
+  </div>
+  <!-- end of content-->
+  <footer data-role="footer"
+			data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar --> 
+  </footer>
+</section>
+<!-- The Intro section--> 
+<!-- Page: Author/Poet List -->
+<section id="authors"
+		data-role="page"
+        data-theme="e"
+		data-title="The Authors of Word Salad">
+  <header data-role="header"
+			data-position="fixed" data-theme="a">
+    <h1 class="gfont">The Authors of Word Salad</h1>
+       <nav data-role="navbar">
+      <ul data-count-theme="e">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header -->
+  <div data-role="content">
+    <div data-role="collapsible-set"  id="poetslist" data-theme="c"> </div>
+ 
+ 
+  </div><!-- content -->
+  
+  <footer data-role="footer"
+			data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar --> 
+  </footer>
+  <!-- footer --> 
+</section>
+
+
+<!-- Page: Videos -->
+<section id="videos"
+		data-role="page"
+        data-theme="e"
+		data-title="Word Salad: Videos">
+  <header data-role="header"
+			data-position="fixed">
+    <h1>Videos</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header -->
+  <div data-role="content">
+    <div data-role="collapsible-set"  id="videolist" data-theme="c"> </div>
+    <!-- end of collapsible set --> 
+    
+  </div>
+  <!-- content -->
+  
+  <footer data-role="footer"
+			data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar --> 
+  </footer>
+  <!-- footer --> 
+</section>
+<!-- page video list --> 
+
+<!-- Page: Videos Player -->
+<section id="videoplayer"
+		data-role="page"
+        data-theme="e"
+		data-title="Word Salad: Video Player">
+  <header data-role="header"
+			data-position="fixed">
+    <h1>Video Player</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header -->
+  <div data-role="content">
+    <div id="myplayer"> </div>
+    <!-- end of myplayer--> 
+    
+  </div>
+  <!-- content -->
+  
+  <footer data-role="footer"
+			data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar --> 
+  </footer>
+  <!-- footer --> 
+</section>
+
+<section id="news"
+		data-role="page"
+        data-theme="e"
+		data-title="News and Updates: Word Salad Poetry Magazine">
+  <header data-role="header"
+			data-position="fixed" data-theme="a">
+    <h1>News/Updates</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#intro"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">Intro</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+<!--
+        <li><span class="ui-li-count">&nbsp;2&nbsp;</span><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates </a></li>-->
+      </ul>
+    </nav>
+  </header>
+  <!-- header -->
+  <div data-role="content">
+    <div data-role="collapsible-set"  id="newslist"> </div>
+    <!-- end of collapsible set --> 
+    
+  </div>
+  <!-- content -->
+  
+  <footer data-role="footer"
+			data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar --> 
+  </footer>
+  <!-- footer --> 
+</section>
+<!-- page video list --> 
+
+
+
+
+<section id="poetry_toc" data-role="page" data-transition="flip" data-theme="e" data-title="Current Edition Poems:Word Salad">
+  <header data-role="header" data-theme="a">
+    <h1>Current Edition Poems: Word Salad</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-l">Home</a></li>
+        <li><a href="#intro"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">Intro</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div data-role="content" id="poetrylist"> </div>
+  <!-- end of content-->
+  <footer data-role="footer"
+			data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- navbar --> 
+  </footer>
+</section>
+<section id="poems"
+		data-role="page"
+        data-transition="flip" 
+        data-theme="e">
+  <header data-role="header">
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header-->
+  <div data-role="content">
+    <div id="thePoem"></div>
+  </div>
+  <!-- content -->
+  <footer data-role="footer"
+        	 data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar in footer --> 
+  </footer>
+  <!-- end of footer--> 
+</section>
+<!-- page -->
+<section id="editors" data-role="page" data-transition="pop" data-theme="e" data-title="Word Salad:The Editors">
+  <header data-role="header">
+    <h1>The Editors</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a> </li>
+        <li><a href="#intro"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">Intro</a></li>
+
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div data-role="content">
+    <h2>Meet the Editors</h2>
+    <div data-role="collapsible-set" data-theme="c">
+      <div data-role="collapsible">
+        <h3>Co-Editor: Jean Arthur Jones</h3>
+        <p>You can read more about Jean Jones on <a href="http://en.wikipedia.org/wiki/Jean_Arthur_Jones">Wikipedia here</a> </p>
+        <p>Jean Jones attended St. Andrews Presbyterian College and received a B.A. in English from the University of North Carolina Wilmington.  He later went on to receive an M.F.A. degree in creative writing from Bowling Green State University.  Jean currently lives in Wilmington, NC.  His awards include the Bowling Green State University Irina Ratushinskaya Freedom Book Award and the St. Andrews Fortner Writer and Community Award.  Jean has been published by numerous literary magazines - Including St. Andrews Review, Pembroke Magazine, Gravity Hill, and Kansas Quarterly.</p>
+        <p>In 2005, Jones became the winner of the Beautiful Nuance 2005 LizaBeth poetry award.  He was also recently published (again) in recent issues of Gravity Hill and Cairn, both from St. Andrews College Press, as well as the Simple Vows Anthology.  His book of poems, "Beyond Good and Evil" can be found on Amazon.com.</p>
+        <h3>"Revelations: The Best Poetry of Jean Arthur Jones Over the Years"</h3>
+        <p>This anthology collection is edited and created by Bruce Whealton and features poetry by Jean Arthur Jones spanning many years</p>
+      </div>
+      <!-- end of Info on Jean-->
+      <div data-role="collapsible">
+        <h2>Co-Editor: Bruce Whealton</h2>
+        <p>Bruce Whealton attended the Georgia Institute of Technology and received his Bachelors Degree in Electrical/computer Engineering in 1989. Bruce went on to receive his Masters in Social Work from the University of South Carolina in 1996.</p>
+        <p>Currently, Bruce Whealton is the owner and Web Developer for <a href="http://futurewaveonline.com/">Future Wave Web Development</a>, a web technology firm. <a href="http://FutureWaveOnline.com">Future Wave Web Development</a> provides Web Design and Development, Web Hosting and Application Development.  Future Wave develops web applications for the <a href="http://jquerymobile.com">mobile web</a> and the <a href="http://my-family-lineage.com/wiki/Semantic_Web_Resources">Semantic Web</a>.  Be sure to check out <a href="http://my-family-lineage.com/wiki/">"My Family Lineage,"</a> a Semantic Web Genealogy Application.  Be sure to <a href="http://my-family-lineage.com/w/index.php?title=Special:UserLogin&type=signup">join "My Family Lineage.</a> and share your family tree.</p>
+        <p>Bruce Whealton began to think of himself as a poet beginning back in 1992, when he shared his poetry at a poetry reading for the first time.&nbsp; This was at the Coastline Convention Center overlooking the Cape Fear River, in Wilmington, NC.&nbsp; He began Word Salad as an online poetry magazine in 1995.</p>
+        <p>Bruce has combined his interest in technical matters with his creativity as expressed in efforts such as this poetry magazine, his own poetry, and as a Web Developer and Web Designer.&nbsp; Bruce Whealton is the owner of Future Wave Designs a successful web development, web design and consulting company in Carrboro, North Carolina, near Chapel Hill, NC in the Triangle Area of North Carolina - the Research Triangle area.</p>
+        <p>Recently, Bruce collaborated with Scott Urban on an ebook collection of poems entitled "Puncture Wounds," focusing on vampires and vampirism.&nbsp; Details can be found on this site by clicking on the menu option on the left for "Puncture Wounds." &nbsp;</p>
+        <p>Bruce also has seen his poems published in</p>
+        <ul>
+          <li>The Houston Literary Review</li>
+          <li>The Talon - UNCW poetry and prose publication</li>
+          <li>Death Head Grin</li>
+          <li>Calliope Nerve</li>
+          <li>The Horror Zine and</li>
+          <li>the Horror Zine's associated Anthology "And Now the Nightmare Begins: The Horror Zine."</li>
+          <li>Aphelion: The Webzine of Science Fiction and Fantasy - 9 of my poems</li>
+          <li>Venus Rising</li>
+          <li>Childe Bryde</li>
+          <li>the thin edge of staring</li>
+          <li>lines written w/a razor</li>
+          <li>Gravity Hill - by St. Andrews Press</li>
+          <li>Chance Magazine</li>
+          <li>lunatic chameleon and</li>
+          <li>Mystic Prophet</li>
+          <li>The Anthology entitled "Simple Vows," which was put together by folks from St. Andrews College.</li>
+          <li>In the not too distant past he placed in the Robert Roarke Poetry contest with a Haiku piece.</li>
+        </ul>
+      </div>
+      <!-- end of collapsible on Bruce Whealton-->
+      <div data-role="collapsible">
+        <h2>Co-Editor: MJD Algera</h2>
+        <p>MJD Algera was born in Scarborough, Ontario, Canada on February 14, 1986, and currently resides in Hamilton, Ontario. He started writing at age 17, and since then his work has appeared in several literary magazines in North America and in Israel, online and in print.</p>
+        <p>Aside from Word Salad, he has seen his work appear in the following journals:</p>
+        <p><strong>Epiphany Arts</strong></p>
+        <p><strong>Crusader Corps</strong></p>
+        <p><strong>Mystic Prophet</strong></p>
+        <p><strong>Stuff My Ear</strong></p>
+        <p><strong>Variations</strong></p>
+        <p><strong>Strathspey</strong></p>
+        <p><strong>Cyclamens &amp; Swords</strong></p>
+        <p>Three of his poems have been shortlisted for national contests such as the Arc Poetry Magazine Poem of the Year contest in 2008 &amp; 2011; the 17<sup>th</sup> Annual Arts Hamilton Literary Award nomination for Best Individual Poem.</p>
+        <p>He is a graduate of McMaster University, and in 2009, he earned a certificate in Creative Writing.</p>
+        <p>He’s traveled and has read at several small artists’ lounges, cafes and libraries across Ontario. His current chapbook <a class="colorbox-load" href="http://www.cyclamensandswords.com/outskirts.php">Outskirts is available online at www.cyclamensandswords.com/outskirts.php</a>.</p>
+        <p>In 2008, he started a minute online writers group called The Writers of the Purple Wage, consisting of eight members, and collaborated frequently with its members through Yahoo! till its demise in early 2010.</p>
+        <p><a class="colorbox-load" href="http://wwwmeanderingbrick-mjd.blogspot.com/">Visit his blog, The Meandering Brick, at http://wwwmeanderingbrick-mjd.blogspot.com</a> where excerpts of ongoing projects are in the works.</p>
+        <p>He continues to remain active in the arts community by volunteering at literary festivals such as grit LIT, and was a former member of the Tower Poetry Society. Aside from collaborating with Bruce Whealton on other Word Salad projects, he is pursuing a career in Teaching the Adult Learner.</p>
+      </div>
+      <!-- collapsible region on MJD Algera --> 
+    </div>
+    <!-- collapsible set -->
+  </div>
+  <!-- content-->
+  
+  <footer data-role="footer"
+        	 data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar in footer --> 
+  </footer>
+</section>
+<section id="submissions" data-role="page" data-transition="pop" data-theme="e" data-title="Word Salad:The Editors">
+  <header data-role="header">
+    <h1>Submission Guidelines</h1>
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div data-role="content">
+    <h1>Submission Guidelines:</h1>
+    <br />
+    <br />
+    <ul>
+      <li>You can submit your poems to editors@wordsaladpoetrymagazine.com</li>
+      <br />
+      <br />
+      <li>When submitting poetry for publication, via email, please use for the subject of the email, "Word Salad Poetry Submissions."</li>
+      <br />
+      <br />
+      <li>Please, if you attach your poems in an email, please put all poems and cover letter into one file.&nbsp; We would prefer that to getting 3, 4 and 5 different files attache for each submission.&nbsp; Just put all 3 to 6 poems in one file.&nbsp;</li>
+      <br />
+      <br />
+      <li>You can upload a file in rich text format (RTF), PDF or Open Office format ODT - <strong><em>preferably rich text format.</em></strong> &nbsp; <strong><em>Note, most word processors, such as MS Word will let you save your file as rich text format, rtf.&nbsp; An rtf (rich text format) file can be read by any word processor and that's why we prefer this most!</em></strong></li>
+      <br />
+      <br />
+      <li>We will accept from 3 to 6 submissions at any one time. You may submit further poems again in 30 days.</li>
+      <br />
+      <br />
+      <br />
+      <li>We <strong>must have a valid email address</strong> and name/pen name or we cannot use your poetry submission(s).</li>
+      <br />
+      <br />
+      <li>Please also read the poems written by the staff and the other poems posted here on this site to get an idea as to the kind of poems we publish.</li>
+      <li>We would ask that you include your name in the file name if you are submitting your poems as an attachment and it is preferable to remove spaces in the file name.&nbsp;&nbsp; So, for example, if I was submitting a set of poems, I'd name the file BruceWhealtonPoetrySubmissionWordSalad.rtf or I&nbsp; could use BruceWhealtonSubmission.rtf</li>
+      <br />
+      <br />
+      <li>We won't be very, very picky, if you don't follow each and every guideline to the letter.&nbsp; The prior bullet point is just a suggestion that makes it easier for me to keep track of submissions and who submitted what.</li>
+    </ul>
+  </div>
+  <footer data-role="footer"
+        	 data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar in footer --> 
+  </footer>
+</section>
+<section id="contact"
+		data-role="page"
+        data-transition="flip" 
+        data-theme="e">
+  <header data-role="header">
+    <nav data-role="navbar">
+      <ul data-count-theme="a">
+        <li><a href="#home"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-l">Home</a></li>
+        <li><a href="#editors"
+         data-transition="flip"
+         data-role="button"
+         data-icon="arrow-r">The Editors</a> </li>
+        <li><a href="#poetry_toc"
+         	data-transition="flip"
+            data-role="button"
+            data-icon="arrow-r">Poems</a></li>
+
+        <li><a href="#news"
+         data-transition="pop"
+         data-role="button"
+          data-icon="info">News/Updates <span class="ui-li-count">&nbsp;2&nbsp;</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header-->
+  <div data-role="content">
+  <h2>App Developer: Bruce Whealton<br />
+Future Wave Web Development</h2>
+<h3>Contact the Developer</h3>
+<h3>Attention Publishers</h3>
+<p>
+My name is Bruce Whealton, and I do business as <a href="http://futurewaveonline.com">Future Wave Web Development.</a> In addition to having an interest in poetry, I also enjoy web development and the development of "apps" for various devices.  I started "Word Salad Poetry Magazine" back in 1995 when the web was just starting. It wasn't feasible to produce a traditional print publication, due to a lack of resources. With the growth in the popularity and use of mobile devices, there was a parallel trend of developing web applications. This is a departure from more static types of websites or even from older forms of "dynamic websites." In the latter case, people are publishing poetry magazines using software like Wordpress, blogging tool, or other Content Management Systems. Now, we have web and mobile apps that do something... there is more interaction. In fact, there is something of a science behind the concept of User Interaction, which is referred to with terms like UI - user interface - and UX - user experience.</p>
+<p>
+Perhaps you have been publishing an online poetry magazine, prose magazine, or something similar and you want people to have access to your publication on a varietry of devices - not just a desktop computer at home. The popularity of smartphones and Tablets has changed how we interact with the web and how we communicate and share ideas, e.g. the online publication, aka ezine, aka online poetry magazine, etc.</p>
+
+<p>
+So, if you have a blog, or online publication and would like to have an app to increase the ways in which people can view and interactive with your content, just contact me at 919-636-5809, by phone, or email: <a href="mailto:bruce@futurewaveonline.com">bruce@futurewaveonline.com</a> or visit my website<a href="http://futurewaveonline.com"> Future Wave Web Development</a>. I am sure you will find the prices for my services very reasonable and a valuable one time investment.</p>
+  </div>
+  <!-- content -->
+  <footer data-role="footer"
+        	 data-position="fixed">
+    <nav data-role="navbar">
+      <ul>
+        <li><a href="#submissions"
+         data-transition="pop"
+         data-role="button"
+         data-rel="dialog"
+         data-icon="info">Submission Guidelines</a></li>
+        <li><a href="#authors" 
+					data-role="button"
+					data-icon="info">About the Poets/Authors</a></li>
+        <li><a href="#videos"
+         				data-role="button"
+            			data-transition="slide"
+           	 			data-icon="ws_videos">Videos</a></li>
+               <li><a href="#contact" 
+					data-role="button"
+                    data-icon="info"
+					data-transition="slideup">About/Contact</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar in footer --> 
+  </footer>
+  <!-- end of footer--> 
+</section>
+<!-- page -->
+
+<script type="text/javascript" src="http://wordsaladpoetrymagazine.com/wp/category/CurrentArticles/?json=1&callback=showIntro"></script> 
+<script type="text/javascript" src="http://wordsaladpoetrymagazine.com/wp/category/news/?json=1&callback=showNews"></script>
+<script type="application/javascript" src="http://wordsaladpoetrymagazine.com/wp/category/authors/?json=1&count=100&callback=listPoets"></script> 
+<script type="application/javascript" src="http://wordsaladpoetrymagazine.com/wp/category/current/?json=1&count=100&callback=listPoems"></script> 
+<script src="http://gdata.youtube.com/feeds/users/BruceWhealton/uploads?&q=WordSalad&alt=json-in-script&format=5&callback=listVideos" type="text/javascript"></script>
+
+</body>
+</html>

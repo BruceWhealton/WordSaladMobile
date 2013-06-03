@@ -1,0 +1,261 @@
+img.right {
+	padding: 5px;
+	float: right;
+	border: 3px double rgba(153,102,0,1);
+	width:100%;
+	max-width:300px;
+}
+.ui-li-count {
+	background:#C44;
+	color:white;
+	text-shadow: 2px 2px 3px #00f;
+	padding-bottom:10px;
+	font-size:1.2em;
+}
+span.ui-li-count {
+	padding:4px;
+	border-radius:1em;
+}
+img {
+	padding: 5px;
+	border: 1px solid rgba(153,102,0,1);
+
+	max-width:300px;
+}
+#author-bio-box {
+	width:400px;
+}
+#author-bio-box img {
+	max-width:90%;
+	max-height:90%;
+}
+#author-bio-box div.bio-socials img {
+	display: none;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, pre {
+	text-align:left;	
+}
+#cover ul, #cover li, #cover p, #cover h1, #cover h2, #cover h3, #cover h4, #cover h5, #cover pre {
+	text-align: center;
+}
+#home img {
+	max-width:300px;
+}
+.clear {
+	clear:both;
+}
+body {
+	font-family: "Helvetica", Arial, sans-serif;
+}
+
+#home {
+	text-align: center;
+		margin:0 auto;
+}
+
+
+#home .ui-controlgroup {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+	max-width: 250px;
+}
+
+#home img {
+	width: 50%;
+	max-width: 200px;
+}
+
+#videolist img {
+	display: block;
+	width: 90%;
+}
+#videolist h3 {
+	margin: 15px 0 5px 0;
+	height: 35px;
+	overflow: hidden;
+	font-size: 1em;
+}
+
+#videolist a {
+	text-decoration: none;
+	color: #777;
+}
+
+#videoplayer .ui-content {
+	margin: 0;
+	padding: 0;
+}
+
+#videoplayer iframe {
+	width:100%;
+	min-height:50%;
+}
+
+#videoplayer h3, #myplayer p {
+	padding: 0 5%;
+}
+
+
+#videoplayer iframe {
+   width: 100%;
+   min-height:50%;
+}
+header.ui-header h1.ui-title {
+	font-size:1.5em;
+	font-family:"Donegal One", Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-shadow: 4px 4px 4px #444;
+}
+#authors header.ui-header h1.ui-title {
+		font-family:"Donegal One", Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-shadow: 4px 4px 4px #444;
+	font-size:1.5em;
+}
+header.ui-header h1.gfont {
+	font-size:1.0em;
+	font-family:"Donegal One",  Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+section.ui-page {
+background: #fffbc3; /* Old browsers */
+background: -moz-linear-gradient(top,  #fffbc3 0%, #ffa735 36%, #fffbc3 74%, #fb9d23 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fffbc3), color-stop(36%,#ffa735), color-stop(74%,#fffbc3), color-stop(100%,#fb9d23)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fffbc3 0%,#ffa735 36%,#fffbc3 74%,#fb9d23 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fffbc3 0%,#ffa735 36%,#fffbc3 74%,#fb9d23 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fffbc3 0%,#ffa735 36%,#fffbc3 74%,#fb9d23 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fffbc3 0%,#ffa735 36%,#fffbc3 74%,#fb9d23 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffbc3', endColorstr='#fb9d23',GradientType=0 ); /* IE6-9 */
+}
+section div.ui-content {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-shadow: 2px 2px 3px #444;
+
+}
+section div.ui-content h2 {
+	font-family: "Hammersmith One", Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:1.6em;
+	text-transform:uppercase;
+	text-shaddow: 7px 7px 7px brown;
+}
+section div.ui-content h3 {
+	font-family: "Hammersmith One", Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:1.4em;
+	text-shaddow: 5px 5px 5px #444;
+}
+section div.ui-content p,
+section div.ui-content ul li {
+	font-family: "Hammersmith One", Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:1.4em;
+	padding-top: 10px;
+	margin-top:0;
+}
+.ui-icon-ws_videos {
+	background-image: url("./images/icon_video.png");
+}
+
+.ui-icon-ws_photo {
+	background-image: url("./images/icon_photo.png");
+}
+
+.ui-icon-ws_blog {
+
+	background-image:url("./images/icon_blog.png");
+}
+
+.ui-icon-ws_twitter {
+	background-image: url("./images/icon_twitter.png");
+}
+div.ui-collapsible-content {
+	width:90%;
+}
+div.ui-collapsible-content img 
+{
+	padding: 0;
+	margin: 5px 0 10px 0;
+	width: 30%
+	max-width:300px;
+}
+div.ui-collapsible-content .ui-li-desc {
+	width:95%;
+	margin:5px;
+	white-space:pre-wrap;
+	word-wrap:normal;
+}
+div.ui-collapsible-content p {
+	width: 95%;
+	word-wrap:normal;
+	margin: 5px 0 5px 0;
+	overflow:visible;
+}
+#player div.player-container {
+	min-height:600px;
+	height:100%;
+}
+#player {
+	height:1000px;
+}
+#videos div.ui-content .ui-collapsible-content h1 a,
+#videos div.ui-content .ui-collapsible-content h1 a:link,
+#videos div.ui-content .ui-collapsible-content h1 a:visited,
+#videos div.ui-content .ui-collapsible-content h2 a,
+#videos div.ui-content .ui-collapsible-content h2 a:link,
+#videos div.ui-content .ui-collapsible-content h2 a:visited,
+#videos div.ui-content .ui-collapsible-content h3 a,
+#videos div.ui-content .ui-collapsible-content h3 a:link,
+#videos div.ui-content .ui-collapsible-content h3 a:visited,
+#videos div.ui-content .ui-collapsible-content p a,
+#videos div.ui-content .ui-collapsible-content p a:link,
+#videos div.ui-content .ui-collapsible-content p a:visited,
+#videos div.ui-content .ui-collapsible-content a h2.ui-li-heading,
+#videos div.ui-content .ui-collapsible-content a:visited h2.ui-li-heading,
+#videos div.ui-content .ui-collapsible-content a:link h2.ui-li-heading,
+#videos div.ui-content .ui-collapsible-content h2.ui-li-heading
+ {
+	color:#00C;
+	text-decoration:none;
+}
+#videos div.ui-content .ui-collapsible-content a:hover h1,
+#videos div.ui-content .ui-collapsible-content a:hover h2.ui-li-heading,
+#videos div.ui-content .ui-collapsible-content a:hover h3,
+#videos div.ui-content .ui-collapsible-content a:hover p {
+	text-decoration:underline;
+	color:#090;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+
+	.ui-icon-ws_video {
+		background-image: url("../images/icon_video_hr.png");
+		background-size:18px 18px;
+	}
+	
+	.ui-icon-ws_photo {
+		background-image: url("../images/icon_photo_hr.png");
+		background-size:18px 18px;
+	}
+	
+	.ui-icon-ws_blog {
+		background-image: url("../images/icon_blog_hr.png");
+		background-size:18px 18px;
+	}
+	
+	.ui-icon-ws_twitter {
+		background-image: url("../images/icon_twitter_hr.png");
+		background-size:18px 18px;
+	}
+	
+	#videolist h3 {
+		margin: 15px 0 5px 0;
+		height: 35px;
+		overflow: hidden;
+		font-size: 1em;
+		width:90%;
+	}
+	
+	#videolist img {
+		width: 90px;
+	}
+
+}
+
